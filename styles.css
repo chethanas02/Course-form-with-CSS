@@ -4,6 +4,7 @@
 h1 {
   font-size: 40px;
   color: #ffe5b4;
+  width:500px;
 }
 h1:hover {
   background: #6d8db5;
