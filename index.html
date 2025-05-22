@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Course Registration Form</h1>
+    <form action="response.html" autocomplete="">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+          <tr>
+            <td>
+              <label for="">First Name</label>
+            </td>
+            <td>
+              <input type="text" required placeholder="Chethana" />
+              <span style="color: white">Enter your Name</span>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="">Last Name</label>
+            </td>
+            <td>
+              <input type="text" placeholder="S" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="">Mobile Number</label>
+            </td>
+            <td>
+              <input type="tel" required placeholder="123-456-7903" maxlength="10"/>
+              <span style="color: white">Enter mobile number</span>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="">Email</label>
+            </td>
+            <td>
+              <input type="email" required />
+              
+              <img src="yes.png" alt="" id="valid" />
+              <img src="no.png" alt="" id="invalid" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="">Password</label>
+            </td>
+            <td>
+              <input type="password" required />
+              <span style="color: white">Enter your password</span>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="">Confirm Password</label>
+            </td>
+            <td>
+              <input type="password" required />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="">DoB</label>
+            </td>
+            <td>
+              <input type="date" required />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="">Age</label>
+            </td>
+            <td>
+              <input type="number" required min="18" max="100" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="">Gender</label>
+            </td>
+            <td>
+              <input type="radio" name="gender" required value="M" />
+              <label for="">Male</label>
+              <input type="radio" name="gender" required value="F" />
+              <label for="">Female</label>
+              <input type="radio" name="gender" required value="O" />
+              <label for="">Other</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="">Select Country</label>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Germany">Germany</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="">Upload Pictures</label>
+            </td>
+            <td>
+              <input type="file" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input type="reset" required />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <legend>Course Details</legend>
+        <table>
+          <tr>
+            <td>
+              <label for="">Select Course</label>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="Javascript">Javascript</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="">Delivary Mode</label>
+            </td>
+            <td>
+              <input type="radio" name="mode" required value="ON" />
+              <label for="">Online</label>
+              <input type="radio" name="mode" required value="OFF" />
+              <label for="">Offline</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="">Institute Name</label>
+            </td>
+            <td>
+              <input type="text" readonly value="TAP Academy" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="">Comments</label>
+            </td>
+            <td>
+              <textarea name="" id=""></textarea>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
